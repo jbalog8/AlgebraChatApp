@@ -1,15 +1,12 @@
 @import "../../styles/index";
 
 .button {
+    @include type($font-weight: 700);
     @include shape('rounded');
     display: block;
     height: 40px;
     width: 100%;
     padding: 0 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 1;
     background-color: $color-theme;
     color: $color-theme-inverted;
     text-align: center;
