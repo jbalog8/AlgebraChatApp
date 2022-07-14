@@ -1,0 +1,12 @@
+@mixin  shape($type) {
+    @if $type == 'rounded'{
+    border-radius: $size-radius-small;
+    } 
+    @else if $type == 'rounded-border' {
+        border-radius: $size-radius-small;
+        border: 1px solid $color-theme;
+        
+    } @else if $type == 'round' {
+        border-radius: $size-radius-large;
+    }
+}
