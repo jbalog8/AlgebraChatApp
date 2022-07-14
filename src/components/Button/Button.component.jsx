@@ -1,5 +1,7 @@
 import "./Button.styles.scss";
 
 export function Button(props) {
-  return <button className="button">{props.children}</button>;
+  const className = `button button--${props.variant}`;
+
+  return <button className={className}>{props.children}</button>;
 }
