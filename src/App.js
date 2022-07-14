@@ -1,8 +1,8 @@
+import { Button } from "./components/Button";
+
 function App() {
   return (
-    <div >
-      Hello World
-    </div>
+    <div><Button>Join</Button></div>
   );
 }
 
