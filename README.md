@@ -2,12 +2,12 @@
 
 ## Features
 
-[ ] Create text messages
+[] Create text messages
 
-[ ] Send text message by pressing "Enter" or the submit button (message is shown next to the name of the author)
+[] Send text message by pressing "Enter" or the submit button (message is shown next to the name of the author)
 
-[ ] Every chat room member is identifiable by name and colour
+[] Every chat room member is identifiable by name and colour
 
-[ ] Integrate with Scaledrone to provide teal-time chat functionality
+[] Integrate with Scaledrone to provide teal-time chat functionality
 
 [x] Host as GitHub repository
