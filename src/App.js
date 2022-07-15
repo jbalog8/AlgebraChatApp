@@ -1,9 +1,10 @@
-import { JoinForm } from "./components/JoinForm";
+
+import { JoinPage } from "./pages/JoinPage";
 
 function App() {
   return (
     <div>
-      <JoinForm />
+      <JoinPage />
     </div>
   );
 }

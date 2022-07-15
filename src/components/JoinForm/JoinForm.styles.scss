@@ -1,6 +1,4 @@
-@import "../../styles/index";
-
-.join-form{
+.join-form {
     display: block;
     width: 100%;
 
@@ -8,9 +6,9 @@
         display: block;
         width: 100%;
         margin-bottom: 16px;
-    }
 
-    &:last-child{
-        margin-bottom: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
