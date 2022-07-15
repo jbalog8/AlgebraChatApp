@@ -1,13 +1,16 @@
-import { Avatar } from "./components/Avatar";
-import { MessageText } from "./components/MessageText";
+import { Message } from "./components/Message";
 
 function App() {
-  return <div>
-    <Avatar text="JB" backgroundColor="lime" />
-    <MessageText displayName="Josip" time="20:13">
+  return (
+    <Message
+      avatarBackgroundColor="blue"
+      avatarText="JB"
+      displayName="Josip Balog"
+      time="20:50"
+    >
       Ready for the trip? I'm so excited I couldn't sleep!
-    </MessageText>
-  </div>
+    </Message>
+  );
 }
 
 export default App;
