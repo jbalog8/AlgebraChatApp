@@ -1,1 +1,1 @@
-export { JoinForm } from "./JoinFrom.component";
+export { JoinForm } from "./JoinForm.container";
