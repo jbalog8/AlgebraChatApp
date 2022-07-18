@@ -4,6 +4,10 @@ export class User {
         this.avatarText = this.displayName.split(' ')
             .map((word) => word[0])
             .join('');
-        this.avatarBackgroundColor = "red";
+        this.avatarBackgroundColor = `hsl(${Math.round(Math.random() * 360)},75%,75%)`;
+
     }
+
+
+
 }
