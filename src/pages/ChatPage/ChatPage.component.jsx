@@ -1,9 +1,14 @@
 import "./ChatPage.styles.scss";
 
 import { Message } from "../../components/Message";
+
 import { MessageForm } from "../../components/MessageForm";
 
 export function ChatPage() {
+  const sendMessage = (formState) => {
+    console.log(formState);
+  };
+
   return (
     <div className="chat-page">
       <div className="chat-page__title">Chat with friends</div>
@@ -30,7 +35,7 @@ export function ChatPage() {
         </div>
       </div>
       <div className="chat-page__form">
-        <MessageForm />
+        <MessageForm onSend={sendMessage} />
       </div>
     </div>
   );
