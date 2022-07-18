@@ -1,4 +1,4 @@
-# algebra-chat-app
+# Algebra-chat-app
 
 ## Features
 
@@ -8,6 +8,6 @@
 - [ ] Integrate with Scaledrone to provide teal-time chat functionality
 - [x] Host as GitHub repository
 
-## Link to see App
+## Link to see the App
 
 - https://jbalog8-chat-app.netlify.app/
