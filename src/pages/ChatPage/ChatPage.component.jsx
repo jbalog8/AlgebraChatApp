@@ -4,7 +4,8 @@ import { Message as MessageModel } from "../../models/Message";
 import { Message } from "../../components/Message";
 import { MessageForm } from "../../components/MessageForm";
 import { useUser } from "../../contexts/UserContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export function ChatPage() {
   const { user } = useUser();
@@ -23,13 +24,10 @@ export function ChatPage() {
         message: message,
       });
     }
-
-    setState((state) => [...state, message]);
   };
 
   useEffect(() => {
     if (drone !== null) return;
-
     setDrone(new window.Scaledrone("PvUu24tZ7XRUMERP"));
   }, [drone, setDrone]);
 
@@ -43,12 +41,12 @@ export function ChatPage() {
         return console.error(error);
       }
       console.log("Connected to room");
-      // Connected to room
     });
 
     room.on("message", (message) => {
-      // Received a message sent to the room
-      console.log("message recived", message);
+      console.log("Message received", message);
+
+      setState((state) => [...state, MessageModel.fromObject(message.data)]);
     });
   }, [drone]);
 
