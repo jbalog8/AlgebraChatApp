@@ -1,1 +1,1 @@
-export { ChatPage } from "./ChatPage.component";
+export { ChatPage } from "./ChatPage.container";
