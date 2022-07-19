@@ -33,4 +33,27 @@
         flex: 0 0 auto;
         margin: 16px 0;
     }
+
+    &__error{
+        @include type($font-size: 1.6rem, $font-weight: 700);
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            color:red;
+            margin-top: 15px;
+
+    }
+
+    &__loading {
+        @include type($font-size: 1.6rem, $font-weight: 700);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        color: green;
+        margin-top: 15px;
+    }
+
 }
+
