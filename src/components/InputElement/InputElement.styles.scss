@@ -1,9 +1,13 @@
 @import "../../styles/index";
 
 .input-element {
-    @include shape('rounded-border');
+    @include shape("rounded-border");
     @include type;
     height: 40px;
     width: 100%;
     padding: 0 16px;
+
+    &:focus {
+        border: 2px solid green;
+    }
 }

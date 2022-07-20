@@ -8,27 +8,31 @@
     height: 100vh;
     width: calc(100% - #{2 * $size-wrapper-margin});
     margin: 0 auto;
+    animation: fadeIn 2s;
 
     &__title {
         @include type($font-size: 2.4rem, $font-weight: 700);
         flex: 0 0 auto;
         margin: 24px 0;
         text-align: center;
-        background-color: aqua;
-        @include shape('rounded')
     }
 
     &__message-list {
         flex: 1 1 auto;
         overflow-y: auto;
-
+        
     }
 
     &__message-list-item {
         margin-bottom: 8px;
         animation: fadeIn 2s;
+        width: 50%;
+        
 
-       
+        &:hover {
+            border: 1px solid black;
+            border-radius: 8px;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -40,27 +44,47 @@
         margin: 16px 0;
     }
 
-    &__error{
+    &__error {
         @include type($font-size: 1.6rem, $font-weight: 700);
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            color:red;
-            margin-top: 15px;
-
-    }
-
-    &__loading {
-       @include type($font-size: 1.6rem, $font-weight: 700);
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        color: green;
-        
+        color: red;
+        margin-top: 15px;
     }
 
-    
+    &__loading {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        animation: scaleLoading 2s;
+    }
 }
 
+@media screen and (min-width: 800px) {
+    .chat-page {
+        background-image: url("../../../public/backgroundphoto.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        border: 2px solid black;
+        animation: slideUp500 1s forwards;
+    }
+}
+@media screen and (max-width: 800px) {
+    .chat-page {
+        background-image: url("../../../public/carphoto.jpg");
+        background-position: center, center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: none;
+        animation: slideUp750 1s forwards;
+    }
+}

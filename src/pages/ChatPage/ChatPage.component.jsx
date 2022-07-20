@@ -31,7 +31,7 @@ export function ChatPage(props) {
 
   return (
     <div className="chat-page">
-      <div className="chat-page__title">Chat with friends</div>
+      <div className="chat-page__title">Let's talk about cars...</div>
       <div className="chat-page__message-list">{messageItems}</div>
       <div className="chat-page__form">
         <MessageForm onSend={props.onSendMessage} />

@@ -7,7 +7,7 @@ export class User {
         } else {
             this.avatarText = this.displayName.split(' ')
                 .map((word) => word[0])
-                .join('');
+                .join('').toUpperCase();
         }
 
         if (avatarBackgroundColor) {

@@ -5,11 +5,14 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: baseline;
+    
 
     &__display-name {
         @include type($font-weight: 700, $line-height: 24 / 16);
         margin-right: 8px;
         display: inline;
+        text-decoration: underline;
+        
     }
 
     &__time {

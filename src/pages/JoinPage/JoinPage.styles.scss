@@ -8,10 +8,11 @@
     min-height: 100vh;
     max-width: 240px;
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto;
     animation: fadeIn 2s;
-
-   
+    background-image: url("../../../public/carphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 
     &__title {
         @include type($font-size: 2.4rem, $font-weight: 700);
@@ -26,6 +27,3 @@
         width: 100%;
     }
 }
-
-
-    
