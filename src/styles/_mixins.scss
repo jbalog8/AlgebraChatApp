@@ -25,3 +25,14 @@
     line-height: $line-height;
     color: $color-text;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+

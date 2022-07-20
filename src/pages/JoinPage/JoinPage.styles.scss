@@ -9,6 +9,9 @@
     max-width: 240px;
     width: 100%;
     margin: 0 auto;
+    animation: fadeIn 2s;
+
+   
 
     &__title {
         @include type($font-size: 2.4rem, $font-weight: 700);
@@ -23,3 +26,6 @@
         width: 100%;
     }
 }
+
+
+    

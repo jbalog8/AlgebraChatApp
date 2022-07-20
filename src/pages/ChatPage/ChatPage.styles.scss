@@ -14,15 +14,21 @@
         flex: 0 0 auto;
         margin: 24px 0;
         text-align: center;
+        background-color: aqua;
+        @include shape('rounded')
     }
 
     &__message-list {
         flex: 1 1 auto;
         overflow-y: auto;
+
     }
 
     &__message-list-item {
         margin-bottom: 8px;
+        animation: fadeIn 2s;
+
+       
 
         &:last-child {
             margin-bottom: 0;
@@ -46,14 +52,15 @@
     }
 
     &__loading {
-        @include type($font-size: 1.6rem, $font-weight: 700);
+       @include type($font-size: 1.6rem, $font-weight: 700);
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         color: green;
-        margin-top: 15px;
+        
     }
 
+    
 }
 
