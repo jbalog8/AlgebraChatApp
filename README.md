@@ -5,7 +5,6 @@ Developed as part of Algebra's Frontend developer course.
 
 [**Try me on Netlify**](https://jbalog8-chat-app.netlify.app/)
 
-/deploy-status?branch=master
 ---
 
 ## Getting started
