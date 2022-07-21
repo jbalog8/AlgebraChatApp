@@ -46,13 +46,16 @@
     }
 
     &__error {
-        @include type($font-size: 1.6rem, $font-weight: 700);
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        animation: scaleLoading 2s;
         color: red;
-        margin-top: 15px;
     }
 
     &__loading {
@@ -65,6 +68,7 @@
         width: 70px;
         height: 70px;
         animation: scaleLoading 2s;
+        color: darkgreen;
     }
 }
 
@@ -77,8 +81,14 @@
         background-attachment: fixed;
         border: 2px solid black;
         animation: slideUp500 1s forwards;
-        &__form{
+        &__form {
             margin: 8px;
+        }
+        &__message-list-item {
+            display: flex;
+            margin: auto;
+            width: 80%;
+            word-wrap: break-word;
         }
     }
 }
@@ -91,7 +101,10 @@
         border: none;
         animation: slideUp750 1s forwards;
         &__message-list-item {
-            width: 100%;
+            display: flex;
+            margin: auto;
+            width: 80%;
+            word-wrap: break-word;
         }
     }
 }
