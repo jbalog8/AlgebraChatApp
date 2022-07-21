@@ -94,8 +94,12 @@
         &__message-list-item {
             display: flex;
             margin: auto;
+            margin-bottom: 8px;
             width: 80%;
             word-wrap: break-word;
+        }
+        &__singOut {
+            width: 50px;
         }
     }
 }
@@ -110,8 +114,12 @@
         &__message-list-item {
             display: flex;
             margin: auto;
+            margin-bottom: 8px;
             width: 80%;
             word-wrap: break-word;
+        }
+        &__singOut {
+            width: 50px;
         }
     }
 }
