@@ -27,3 +27,21 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 800px) {
+    .join-page {
+        max-width: 400px;
+        border: 1px solid black;
+        animation: slideUp500 2s forwards;
+
+        &__form {
+            max-width: 240px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .join-page {
+        margin-top: 20px;
+        animation: slideUp750 2s forwards;
+    }
+}
