@@ -10,6 +10,13 @@
     margin: 0 auto;
     animation: fadeIn 2s;
 
+    &__singOut {
+        width: 30%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: 8px;
+    }
+
     &__title {
         @include type($font-size: 2.4rem, $font-weight: 700);
         flex: 0 0 auto;

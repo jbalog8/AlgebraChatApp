@@ -24,7 +24,7 @@
     &:hover {
         @include type($font-family: 5rem, $font-weight: 700);
         font-size: large;
-        color: green;
+
         animation: scaleButton 1s;
     }
 }
