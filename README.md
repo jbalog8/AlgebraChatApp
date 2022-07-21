@@ -5,6 +5,10 @@ Developed as part of Algebra's Frontend developer course.
 
 [**Try me on Netlify**](https://jbalog8-chat-app.netlify.app/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a2d65e9-da65-49ec-9520-d9806247528c/deploy-status)](https://app.netlify.com/sites/jbalog8-chat-app/deploys)
+
+![npm](https://img.shields.io/npm/v/npm)
+
 ---
 
 ## Getting started
