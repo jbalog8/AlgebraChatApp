@@ -42,3 +42,4 @@ Build the project for production.
 - [x] Every chat room member is identifiable by name and colour
 - [x] Integrate with Scaledrone to provide real-time chat functionality
 - [x] Host as GitHub repository
+- [x] Adding Sing Out button
